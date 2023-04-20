@@ -7,9 +7,9 @@ import org.testng.annotations.BeforeTest;
 
 
 
-class CashbackHackServiceTest {
+public class CashbackHackServiceTest {
     @BeforeTest
-    void shouldFindCashbackIfAmountMoreThanThousand() {
+    public void shouldFindCashbackIfAmountMoreThanThousand() {
 
         CashbackHackService cashbackHackService = new CashbackHackService();
         int amount = 1001;
@@ -19,7 +19,7 @@ class CashbackHackServiceTest {
 
     }
     @BeforeTest
-    void shouldFindCashbackIfAmountLessThanThousand() {
+    public void shouldFindCashbackIfAmountLessThanThousand() {
 
         CashbackHackService cashbackHackService = new CashbackHackService();
         int amount = 999;
@@ -29,7 +29,7 @@ class CashbackHackServiceTest {
 
     }
     @BeforeTest
-    void shouldFindCashbackIfAmountEqualsThousand() {
+    public void shouldFindCashbackIfAmountEqualsThousand() {
 
         CashbackHackService cashbackHackService = new CashbackHackService();
         int amount = 1000;
